@@ -1,0 +1,106 @@
+/* A clicked student poster becomes a full-screen exhibition title card. */
+.project-flight {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  overflow: hidden;
+  isolation: isolate;
+  pointer-events: auto;
+  background: var(--flight-bg);
+  color: var(--flight-ink);
+  clip-path: inset(var(--flight-top) var(--flight-right) var(--flight-bottom) var(--flight-left) round 18px);
+  transition: clip-path 1020ms cubic-bezier(.18,.85,.16,1), opacity 560ms ease;
+  opacity: 1;
+  font-family: "Space Grotesk", sans-serif;
+  contain: paint;
+}
+.project-flight--expanded,
+.project-flight--revealing {
+  clip-path: inset(0 0 0 0 round 0);
+}
+.project-flight--revealing {
+  opacity: 0;
+  pointer-events: none;
+}
+.project-flight__shape {
+  position: absolute;
+  z-index: -1;
+  aspect-ratio: 1;
+  border-radius: 42% 58% 67% 33% / 43% 49% 51% 57%;
+  background: var(--flight-accent);
+  opacity: .65;
+  transition: transform 1050ms cubic-bezier(.18,.85,.16,1);
+}
+.project-flight__shape--one {
+  width: 80vmax;
+  left: 44%;
+  top: -25%;
+  transform: translate(18%, -10%) rotate(-28deg) scale(.8);
+}
+.project-flight__shape--two {
+  width: 45vmax;
+  left: 67%;
+  top: 40%;
+  opacity: .38;
+  background: var(--flight-accent2);
+  transform: translate(30%, 25%) rotate(30deg) scale(.6);
+}
+.project-flight--expanded .project-flight__shape--one,
+.project-flight--revealing .project-flight__shape--one {
+  transform: translate(-5%, 8%) rotate(4deg) scale(1);
+}
+.project-flight--expanded .project-flight__shape--two,
+.project-flight--revealing .project-flight__shape--two {
+  transform: translate(0, 0) rotate(-15deg) scale(1);
+}
+.project-flight__initials {
+  position: absolute;
+  right: -3vw;
+  top: -9vh;
+  font-size: clamp(12rem, 47vw, 53rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.12em;
+  opacity: .14;
+  user-select: none;
+}
+.project-flight__content {
+  position: absolute;
+  left: clamp(24px, 6vw, 110px);
+  bottom: clamp(55px, 10vh, 130px);
+  right: clamp(24px, 8vw, 140px);
+  opacity: 0;
+  transform: translateY(65px);
+  transition: opacity 480ms ease 260ms, transform 700ms cubic-bezier(.18,.85,.16,1) 260ms;
+}
+.project-flight--expanded .project-flight__content,
+.project-flight--revealing .project-flight__content {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-flight__meta {
+  display: block;
+  margin-bottom: clamp(22px, 3vw, 45px);
+  font-size: clamp(11px, 1vw, 16px);
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.project-flight__content strong {
+  display: block;
+  max-width: 14ch;
+  font-size: clamp(3.25rem, 9vw, 11rem);
+  font-weight: 700;
+  line-height: .85;
+  letter-spacing: -.09em;
+  overflow-wrap: anywhere;
+}
+.project-flight__content strong span { display: block; }
+@media (max-width: 720px) {
+  .project-flight__shape--one { width: 105vmax; left: 15%; top: -2%; }
+  .project-flight__shape--two { width: 75vmax; left: 25%; top: 35%; }
+  .project-flight__initials { top: 8%; right: -10vw; font-size: 88vw; }
+  .project-flight__content strong { font-size: clamp(2.5rem, 13vw, 6rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-flight, .project-flight__shape, .project-flight__content { transition: none; }
+}
