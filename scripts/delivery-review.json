@@ -263,6 +263,57 @@
       }
     }
   },
+  "Podesta": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          ["<title>Document</title>", "<title>Derecho a la salud</title>"],
+          [">papa leon XIV</a>", ">Papa León XIV</a>"],
+          ["Algunas ideas erroneas sobre el derecho de la salud:", "Algunas ideas erróneas sobre el derecho a la salud:"],
+          ["niveles mínimos esenciales de derecho a la salud", "niveles mínimos esenciales del derecho a la salud"],
+          ["se les presta o se les niega cuidados sanitarios", "se les prestan o se les niegan cuidados sanitarios"],
+          ["Prevenciones:", "Prevención:"],
+          ["La propagación de enfermedades,", "Prevenir la propagación de enfermedades,"],
+          ["cosas que tenes que hacer", "cosas que tenés que hacer"],
+          ["Hospitales publicos:", "Hospitales públicos:"],
+          ["Hos4ital Maciel", "Hospital Maciel"],
+          ["</section class=\"mi-seccion\">", "</section>"],
+          ["</section class=\"mi2-seccion\">", "</section>"],
+          ["</section class=\"mi3-seccion\">", "</section>"],
+          ["</section class=\"mi4-seccion>", "</section>"],
+          ["<main>\n    \n    <section class=\"mi5-seccion\">\n        \n    </section>\n</main>", "</main>"],
+          ["<h4>Enlaces</h4>\n    \n</footer>", "<h4>Enlaces</h4>"],
+          ["</section class=\"mi5-seccion\">", ""]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          ["<title>Document</title>", "<title>Visita del papa a Uruguay</title>"],
+          [">papa leon XIV</a>", ">Papa León XIV</a>"],
+          ["Dias de la visita:", "Días de la visita:"],
+          ["Sabado 7:", "Sábado 7:"],
+          ["Carrasco ,", "Carrasco,"],
+          ["Independencia ,", "Independencia,"],
+          ["Metropolitana .", "Metropolitana."],
+          ["Londres ,", "Londres,"],
+          ["Casavalle ,", "Casavalle,"],
+          ["Centenario .", "Centenario."],
+          ["Juanicó ,", "Juanicó,"],
+          ["Argentina .", "Argentina."],
+          ["Uruguay(del", "Uruguay (del"],
+          ["Paysandú</p>", "Paysandú.</p>"],
+          ["</section class=\"mi6-seccion>", "</section>"],
+          ["<section class=\"mi7-seccion>", "<section class=\"mi7-seccion\">"],
+          ["</section class=\"mi7-seccion\">", "</section>"],
+          ["<li>Viernes 6: Montevideo </li>", "<li>Viernes 6: Montevideo"],
+          ["<li>Sábado 7: Montevideo y Paysandú</li>", "</li>\n      <li>Sábado 7: Montevideo y Paysandú"],
+          ["<li>Domingo 8: Juanicó, Florida y despedida</li>", "</li>\n      <li>Domingo 8: Juanicó, Florida y despedida"],
+          ["Argentina.</p>\n  </ul>", "Argentina.</p>\n      </li>\n  </ul>"],
+          ["<li>https://www.teledoce.com/telemundo/nacionales/dia-por-dia-minuto-a-minuto-la-agenda-del-papa-leon-xiv-durante-su-visita-de-tres-dias-a-uruguay/</li>", "<li><a href=\"https://www.teledoce.com/telemundo/nacionales/dia-por-dia-minuto-a-minuto-la-agenda-del-papa-leon-xiv-durante-su-visita-de-tres-dias-a-uruguay/\">Agenda de la visita del papa — Teledoce</a></li>"]
+        ]
+      }
+    }
+  },
   "Sofia Alfaro": {
     "styleFile": "sofia-alfaro.css",
     "pages": {

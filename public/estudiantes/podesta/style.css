@@ -1,0 +1,33 @@
+ 
+
+body{
+    background-color: aqua;
+}
+
+
+  .mi-seccion {
+    background-color: #42a3e4;
+    padding: 20px;
+}
+
+.mi2-seccion {
+    background-color: rgb(26, 132, 173) ;
+    padding: 20px;
+}
+
+.mi3-seccion {
+    background-color: #194586;
+    padding: 20px;
+}
+
+.mi4-seccion {
+    background-color: #0d2549;
+    padding: 20px;
+}
+
+.mi5-seccion{
+    background-color: #051731;
+    padding: 20px;
+}
+
+

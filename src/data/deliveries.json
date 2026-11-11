@@ -234,6 +234,15 @@
     "projectPath": "/estudiantes/mendoza-y-martin/index.html"
   },
   {
+    "id": "9a-agustin-podesta",
+    "firstName": "Agustín",
+    "lastName": "Podesta",
+    "group": "9A",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/podesta/index.html"
+  },
+  {
     "id": "9a-juan-rojo",
     "firstName": "Juan",
     "lastName": "Rojo",
