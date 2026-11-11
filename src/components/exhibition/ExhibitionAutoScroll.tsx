@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 // Autoscroll por defecto en la portada, con pausa al interactuar.
 // Velocidades en píxeles por segundo. Ajustables sin tocar otros componentes.
-const SCROLL_DOWN_SPEED = 30;
+const SCROLL_DOWN_SPEED = 300;
 const SCROLL_UP_SPEED = 300;
 const START_DELAY_MS = 5000;
 const EDGE_DELAY_MS = 2600;
