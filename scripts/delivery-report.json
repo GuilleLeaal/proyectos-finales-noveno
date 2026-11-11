@@ -1,0 +1,199 @@
+[
+  {
+    "folder": "Barros y Cibils",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Bonifacino y Di Palma",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Cano y Castiglioni",
+    "entry": "index.html",
+    "included": [
+      "index.html"
+    ],
+    "excluded": [
+      {
+        "file": "papa.html",
+        "reason": "Documento vacío, sin texto ni contenido desarrollado."
+      }
+    ],
+    "repairs": [
+      "index.html: enlace retirado a papa.html",
+      "index.html: enlace retirado a papa.html"
+    ]
+  },
+  {
+    "folder": "Ceriani y Sofia Mendez",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Corporales y Gomendio",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Delfina y Rocio",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": [
+      "index.html: imagen no entregada hospital.jpg",
+      "papa.html: imagen no entregada papa2.jpg",
+      "papa.html: imagen no entregada uruguay.jpg",
+      "index.html: conexión añadida a papa.html",
+      "papa.html: conexión añadida a index.html"
+    ]
+  },
+  {
+    "folder": "Fantoni y Rocha",
+    "entry": "index.html",
+    "included": [
+      "anafantoniferia.html",
+      "index.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Felipe Gonzalez y Felipe Vera",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa leon XIV.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Jaurena y Cabovianco",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": [
+      "index.html: conexión añadida a papa.html",
+      "papa.html: conexión añadida a index.html"
+    ]
+  },
+  {
+    "folder": "Laurito Benjamin Martinez y Pedro Abal",
+    "entry": "papa.html",
+    "included": [
+      "papa.html"
+    ],
+    "excluded": [
+      {
+        "file": "derecho.html",
+        "reason": "Solo una frase introductoria y una cita; sin desarrollo del tema."
+      }
+    ],
+    "repairs": []
+  },
+  {
+    "folder": "Macarena Lara y Giuliana Martinez",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Mendoza y Martin",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": [
+      "papa.html: conexión añadida a index.html"
+    ]
+  },
+  {
+    "folder": "Rojo y Armanetti",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Sofia Alfaro",
+    "entry": "index.html",
+    "included": [
+      "index.html"
+    ],
+    "excluded": [],
+    "repairs": [
+      "index.html: enlace retirado a papa.html",
+      "styles.css: presentación agregada para el HTML entregado sin CSS"
+    ]
+  },
+  {
+    "folder": "Sofia Esquivel y Feliope pose",
+    "entry": "INDEX.HTML",
+    "included": [
+      "INDEX.HTML",
+      "PAPA.HTML"
+    ],
+    "excluded": [],
+    "repairs": [
+      "INDEX.HTML: mayúsculas corregidas en el enlace a INDEX.HTML",
+      "INDEX.HTML: mayúsculas corregidas en el enlace a PAPA.HTML",
+      "PAPA.HTML: mayúsculas corregidas en el enlace a INDEX.HTML",
+      "PAPA.HTML: mayúsculas corregidas en el enlace a INDEX.HTML",
+      "PAPA.HTML: mayúsculas corregidas en el enlace a PAPA.HTML",
+      "PAPA.HTML: mayúsculas corregidas en el enlace a INDEX.HTML"
+    ]
+  },
+  {
+    "folder": "Sofia Reina y Eva Paiva",
+    "entry": "papa.html",
+    "included": [
+      "papa.html"
+    ],
+    "excluded": [
+      {
+        "file": "index.html",
+        "reason": "Solo navegación y título, sin contenido desarrollado."
+      }
+    ],
+    "repairs": [
+      "papa.html: enlace retirado a index.html"
+    ]
+  }
+]

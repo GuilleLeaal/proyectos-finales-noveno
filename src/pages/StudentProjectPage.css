@@ -1,61 +1,29 @@
-.project-view { min-height: 100svh; background: #f4f0ea; color: #141625; font-family: "Space Grotesk",sans-serif; }
-.project-view__nav { display: flex; justify-content: space-between; align-items: center; padding: 24px clamp(24px,5vw,85px); border-bottom: 1px solid #d8d5d0; font-size: 13px; font-weight: 700; }
-.project-view__back { display: inline-flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
-.project-view__back:hover { color: #3150ff; }
-.project-view__intro { padding: clamp(70px,8vw,135px) clamp(24px,5vw,85px) 0; }
-.project-view__topline { display: flex; justify-content: space-between; gap: 15px; color: #6e6d76; font: 600 11px "Space Grotesk",sans-serif; letter-spacing: .15em; }
-.project-view__intro h1 { overflow-wrap: anywhere; font-size: clamp(3.8rem, 9.5vw, 11rem); line-height: .95; letter-spacing: -.085em; margin: 35px 0 65px; }
-.project-view__intro h1 span { color: #3150ff; }
-.project-view__separator { height: 1px; background: #d0cdd0; }
-.project-view__showcase { padding: 35px clamp(24px,5vw,85px) 80px; }
-.project-view__viewer-heading { display: flex; justify-content: space-between; margin-bottom: 20px; font: 600 11px "Space Grotesk",sans-serif; letter-spacing: .15em; }
-.project-view__iframe { display: block; width: 100%; min-height: 700px; height: 85svh; background: white; border: 1px solid #b9b5c7; }
-.project-view__placeholder { min-height: clamp(450px,60vw,670px); overflow: hidden; position: relative; display: flex; align-items: center; padding: clamp(30px,8vw,100px); background: #1d2bc0; color: white; isolation: isolate; }
-.project-view__placeholder-orbit { position: absolute; z-index: -1; width: min(80%,750px); aspect-ratio: 1; right: -9%; top: -38%; border: 55px solid rgba(255,255,255,.18); border-radius: 50%; box-shadow: 0 0 0 35px rgba(143,163,255,.15),0 0 0 100px rgba(143,163,255,.11),0 0 0 180px rgba(143,163,255,.07); transform: rotate(-25deg) scaleY(.8); }
-.project-view__placeholder-content { position: relative; max-width: 960px; }
-.project-view__placeholder-content > span { font: 600 10px "Space Grotesk",sans-serif; letter-spacing: .18em; }
-.project-view__placeholder-content strong { display: block; margin-top: 60px; font-size: clamp(3.7rem, 9vw, 10rem); line-height: .9; letter-spacing: -.095em; }
-.project-view__placeholder-content strong span { color: #ffdf7a; }
-.project-view__placeholder-content p { margin-top: 35px; max-width: 350px; color: #e6e7ff; font-family: "DM Sans",sans-serif; font-size: 16px; }
-.project-view__end-link { display: flex; justify-content: space-between; align-items: center; margin: 0 clamp(24px,5vw,85px); padding: 30px 0 45px; border-top: 1px solid #d0cdd0; color: #141625; text-decoration: none; font-weight: 700; }
-.project-view--missing { padding: 70px; }
-@media(max-width:720px) { .project-view__topline { flex-direction: column; } .project-view__intro h1 { font-size: 14vw; margin-bottom: 40px; } .project-view__placeholder-content strong { font-size: 13vw; } .project-view__placeholder { padding: 35px; } }
-
-/* The student's original HTML stays untouched. Fullscreen expands only its viewer. */
-.project-view__viewer { min-width: 0; }
-.project-view__viewer-heading { align-items: center; gap: 20px; }
-.project-view__fullscreen {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  min-height: 43px;
-  padding: 10px 16px;
-  border: 1px solid #c9c6d0;
-  border-radius: 999px;
-  background: transparent;
-  color: inherit;
-  font: 700 11px "Space Grotesk", sans-serif;
-  letter-spacing: .07em;
-  cursor: pointer;
-  transition: background .2s, border-color .2s, color .2s;
+.student-project {
+  min-height: 100svh;
+  padding: 0 clamp(12px, 2.5vw, 48px) 24px;
+  background: #f2f0e9;
+  color: #181924;
+  font-family: "DM Sans", sans-serif;
 }
-.project-view__fullscreen:hover, .project-view__fullscreen:focus-visible {
-  border-color: #3150ff;
-  background: #3150ff;
-  color: white;
-}
-.project-view__viewer:fullscreen {
-  display: flex;
-  flex-direction: column;
-  padding: 12px;
-  background: #141625;
-  color: #fff;
-}
-.project-view__viewer:fullscreen .project-view__viewer-heading { flex-shrink: 0; margin-bottom: 12px; }
-.project-view__viewer:fullscreen .project-view__iframe { flex: 1; min-height: 0; height: 100%; border: 0; }
-.project-view__viewer:fullscreen .project-view__fullscreen { border-color: #b4bbd0; color: white; }
-@media (max-width: 720px) {
-  .project-view__viewer-heading { flex-wrap: wrap; }
-  .project-view__fullscreen { font-size: 10px; }
+.student-project__viewer { width: 100%; max-width: 1760px; margin-inline: auto; }
+.student-project__header { display: grid; grid-template-columns: 1fr minmax(0, auto) 1fr; align-items: center; gap: 24px; min-height: 84px; padding-block: 16px; }
+.student-project__header h1 { margin: 0; font: 500 clamp(17px, 1.8vw, 27px)/1.2 "Space Grotesk", sans-serif; letter-spacing: -.04em; text-align: center; overflow-wrap: anywhere; }
+.student-project__back, .student-project__expand { display: inline-flex; align-items: center; gap: 9px; color: inherit; font: 500 12px "DM Sans", sans-serif; text-decoration: none; width: fit-content; min-height: 36px; }
+.student-project__expand { justify-self: end; padding: 6px 0 6px 10px; border: 0; background: transparent; cursor: pointer; }
+.student-project__back:hover, .student-project__expand:hover { color: #3449f7; }
+.student-project__back:focus-visible, .student-project__expand:focus-visible { outline: 2px solid #3449f7; outline-offset: 4px; }
+.student-project__iframe { display: block; width: 100%; height: calc(100svh - 108px); min-height: 480px; border: 1px solid #d4d2ca; background: white; }
+.student-project__notice { padding: 0 0 14px; margin: 0; font-size: 12px; color: #873e26; }
+.student-project__viewer:fullscreen { display: flex; flex-direction: column; max-width: none; width: 100%; height: 100%; padding: 0 16px 16px; background: #f2f0e9; }
+.student-project__viewer:fullscreen .student-project__header { min-height: 64px; flex-shrink: 0; }
+.student-project__viewer:fullscreen .student-project__iframe { flex: 1; height: 100%; min-height: 0; }
+.student-project--missing { padding-block: 60px; }
+.student-project--missing h1 { font: 500 28px "Space Grotesk", sans-serif; margin-bottom: 20px; }
+@media (max-width: 600px) {
+  .student-project { padding-bottom: 12px; }
+  .student-project__header { grid-template-columns: 34px minmax(0, 1fr) 34px; min-height: 72px; gap: 12px; }
+  .student-project__back > span, .student-project__expand > span { display: none; }
+  .student-project__expand { padding: 8px; }
+  .student-project__iframe { height: calc(100svh - 84px); }
+  .student-project__viewer:fullscreen { padding: 0 8px 8px; }
 }

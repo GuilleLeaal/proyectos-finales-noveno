@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc -b"
+    "typecheck": "tsc -b",
+    "import:projects": "node scripts/import-deliveries.mjs",
+    "test": "node --test scripts/import-deliveries.test.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",

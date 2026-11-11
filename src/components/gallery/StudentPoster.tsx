@@ -8,10 +8,8 @@ import { useProjectNavigation } from "../navigation/ProjectNavigationTransition"
 
 export function StudentPoster({
   student,
-  featured = false,
 }: {
   student: Student;
-  featured?: boolean;
 }) {
   const { openStudent } = useProjectNavigation();
   const theme = posterThemes[student.artwork];
@@ -28,7 +26,7 @@ export function StudentPoster({
   return (
     <Link
       to={`/proyectos/${student.id}`}
-      className={`student-poster artwork-${student.artwork}${featured ? " student-poster--featured" : ""}`}
+      className={`student-poster artwork-${student.artwork}`}
       style={style}
       aria-label={`Ver página de ${fullName}, grupo ${student.group}`}
       onClick={(event) => {

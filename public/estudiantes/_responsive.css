@@ -1,0 +1,55 @@
+/* No desktop overrides. Table wrappers have no box above the mobile breakpoint. */
+.student-table-scroll { display: contents; }
+
+@media (max-width: 768px) {
+  *, *::before, *::after { box-sizing: border-box; }
+  html, body { min-width: 0; }
+  body { overflow-wrap: anywhere; }
+  main, section, article, aside, header, footer, nav, div { min-width: 0; max-width: 100%; }
+  h1, h2, h3, h4, p, a, li, th, td { overflow-wrap: anywhere; }
+  img, video, canvas, svg { max-width: 100% !important; height: auto !important; }
+  img { float: none !important; margin-inline: auto !important; }
+  iframe, embed, object { max-width: 100%; }
+  nav { flex-wrap: wrap; }
+  nav a { display: inline-block; max-width: 100%; white-space: normal; }
+  .student-table-scroll { display: block; width: 100%; max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+  .student-table-scroll:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .student-table-scroll > table { width: 100%; min-width: 440px; }
+
+  /* Two-column text and image arrangements become a single reading column. */
+  [data-student-project="bonifacino-y-di-palma"] .contenido,
+  [data-student-project="bonifacino-y-di-palma"] .contenido.invertido {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  [data-student-project="bonifacino-y-di-palma"] .contenido > * { grid-column: auto !important; grid-row: auto !important; }
+  [data-student-project="bonifacino-y-di-palma"] header h1 { font-size: clamp(25px, 7vw, 38px); }
+  [data-student-project="bonifacino-y-di-palma"] section { padding: 20px; }
+  [data-student-project="bonifacino-y-di-palma"] .imagenes-actividades { flex-direction: column; gap: 16px; }
+  [data-student-project="bonifacino-y-di-palma"] .imagenes-actividades img { max-width: 100%; }
+  [data-student-project="bonifacino-y-di-palma"] p { margin-inline: 18px; }
+  [data-student-project="bonifacino-y-di-palma"] .contenido p { margin-inline: 0; }
+
+  /* Replace absolute coordinates with natural flow only on small screens. */
+  [data-student-project="felipe-gonzalez-y-felipe-vera"] :is(h1, h2, h3, p, img, footer) {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    width: auto !important;
+    max-width: 100%;
+  }
+  [data-student-project="felipe-gonzalez-y-felipe-vera"] :is(.headerPapa, .heaederderecho) { font-size: clamp(26px, 7vw, 38px); }
+  [data-student-project="felipe-gonzalez-y-felipe-vera"] section { margin-block: 24px; }
+  [data-student-project="felipe-gonzalez-y-felipe-vera"] img { display: block; }
+  [data-student-project="felipe-gonzalez-y-felipe-vera"] footer { margin: 28px 0 0; }
+
+  /* Oversized headings and nested margins were leaving almost no text width. */
+  [data-student-project="ceriani-y-sofia-mendez"] header h1 { font-size: clamp(28px, 7.5vw, 42px); }
+  [data-student-project="ceriani-y-sofia-mendez"] section { margin: 20px 8px; padding: 16px; }
+  [data-student-project="ceriani-y-sofia-mendez"] p { font-size: 20px; }
+  [data-student-project="ceriani-y-sofia-mendez"] h2 { font-size: 24px; }
+  [data-student-project="delfina-y-rocio"] h1 { font-size: clamp(26px, 7vw, 38px); }
+
+  [data-student-project="mendoza-y-martin"] .imagen { display: block; }
+  [data-student-project="mendoza-y-martin"] table { clear: both; }
+}

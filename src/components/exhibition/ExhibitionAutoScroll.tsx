@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-// Modo muestra: ?muestra=1. No afecta a quienes navegan normalmente.
+// Autoscroll por defecto en la portada, con pausa al interactuar.
 // Velocidades en píxeles por segundo. Ajustables sin tocar otros componentes.
 const SCROLL_DOWN_SPEED = 350;
 const SCROLL_UP_SPEED = 300;
@@ -18,8 +18,7 @@ export default function ExhibitionAutoScroll() {
   const location = useLocation();
 
   useEffect(() => {
-    const exhibitionMode = new URLSearchParams(location.search).get("muestra") === "1";
-    if (location.pathname !== "/" || !exhibitionMode) return;
+    if (location.pathname !== "/") return;
 
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     if (reducedMotion.matches) return;
@@ -167,7 +166,7 @@ export default function ExhibitionAutoScroll() {
       document.removeEventListener("visibilitychange", onVisibilityChange);
       reducedMotion.removeEventListener("change", onReducedMotionChange);
     };
-  }, [location.pathname, location.search]);
+  }, [location.pathname]);
 
   return null;
 }

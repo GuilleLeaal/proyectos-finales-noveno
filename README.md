@@ -1,67 +1,82 @@
-# Proyectos Finales 2026 — Proyecto recuperado
+# Proyectos Finales 2026 â€” Pallotti
 
-## Qué se conservó
+La galería muestra únicamente estudiantes con entregas importadas, con primer nombre y primer apellido. Los apellidos compuestos se conservan: Di Palma. Cada integrante tiene una tarjeta; los integrantes de un mismo equipo comparten los archivos del proyecto.
 
-Se conservaron los archivos de la copia enviada por el docente y el diseño aprobado:
-- Hero V2 con su escultura 3D y animaciones.
-- Transición cinética «Del aula a la web».
-- Entrada visual a la galería.
-- Galería de 48 estudiantes sin fotografías, filtros y buscador.
-- Páginas individuales `/proyectos/:id` listas para alojar los trabajos.
-- Los estilos, datos, recursos adicionales y las configuraciones de publicación existentes.
+## Incorporar entregas
 
-## Reparaciones realizadas
+1. Dejá cada trabajo en una subcarpeta de `C:\Users\Usuario\Desktop\Proyectos estudiantes`. Conservá las entregas anteriores allí.
+2. Cada subcarpeta debe tener sus HTML, CSS e imágenes, respetando la estructura original. Si no existe un `index.html` desarrollado, se abre directamente una de las páginas con contenido.
+3. Nombrá las carpetas con los apellidos, por ejemplo `Bonifacino y Di Palma`. También se aceptan nombres y apellidos, comas, `&` o `+` entre integrantes.
+4. Desde la carpeta del repositorio, ejecutá:
 
-1. Se recuperó `index.html`, ausente en el ZIP recibido.
-2. Se recuperó `vite.config.ts`, ausente en el ZIP recibido.
-3. Se recuperó `tsconfig.json`, utilizando como referencias los `tsconfig.app.json` y `tsconfig.node.json` existentes.
-4. Se arregló en `src/components/gallery/GalleryEntrance.tsx` la importación `./GalleryEntrance` por `./GalleryEntrance.css`.
-5. Se hizo coincidir `package.json` con las dependencias del `package-lock.json` aportado (en la copia recibida tenían versiones distintas).
+```powershell
+npm run import:projects
+npm test
+npm run build
+```
 
-No se modificaron los componentes del Hero V2, ni la escultura, ni las animaciones y estilos aprobados.
+Para elegir otra carpeta:
 
-## Cómo ejecutar en Windows
+```powershell
+npm run import:projects -- "D:\Entregas"
+```
 
-1. Hacé una copia de seguridad de tu carpeta actual `proyectos-finales-2026` (por ejemplo, renombrala `proyectos-finales-2026-respaldo`). **No borres tus archivos originales.**
-2. Descomprimí este ZIP en `WebProyectos`, dejando esta estructura:
+La importación cruza las carpetas con `scripts/roster.json`. Si hay apellidos repetidos, utiliza los créditos de autoría del HTML. Si no puede identificar a alguien con certeza, se detiene antes de cambiar el catálogo. No publica estudiantes por aproximación. En ese caso, agregá una asignación en `scripts/delivery-overrides.json`, por ejemplo:
 
-   ```text
-   WebProyectos/
-     proyectos-finales-2026/
-       package.json
-       package-lock.json
-       index.html
-       vite.config.ts
-       tsconfig.json
-       src/
-       public/
-   ```
-3. Abrí VS Code en **`proyectos-finales-2026`**. No lo abras desde una carpeta por encima que no tenga `package.json`.
-4. Desde la terminal de esa carpeta, ejecutá:
+```json
+{
+  "Bonifacino y Di Palma": ["9c-facundo-bonifacino", "9c-juan-di-palma"]
+}
+```
 
-   ```powershell
-   npm install
-   npm run dev
-   ```
+Los IDs se forman con grupo, primer nombre y primer apellido, en minúsculas y sin tildes. La lista completa queda en las herramientas de importación y no se incluye en el código del navegador.
 
-5. Para comprobar el código y generar una versión de producción, ejecutá:
+El proceso copia los trabajos a `public/estudiantes/` y genera `src/data/deliveries.json`. Actualiza automáticamente tarjetas, búsqueda, filtros y contadores. En las copias agrega viewport cuando falta, carga diferida de imágenes desde la segunda imagen y abrevia los nombres en párrafos de créditos identificados como Creadores, Autores o Integrantes. Los originales del escritorio se conservan.
 
-   ```powershell
-   npm run build
-   ```
+Repetir el comando actualiza las mismas entregas. Los nombres ambiguos, un estudiante duplicado o una carpeta de entrada vacía detienen la importación. Las entregas sin ninguna página desarrollada no se incorporan. Quitar una entrega del origen la quita del catálogo en la siguiente importación, pero los archivos publicados anteriores no se borran automáticamente.
 
-`node_modules` está deliberadamente excluido: npm instalará las dependencias correspondientes a tu sistema operativo. No copies el `node_modules` del proyecto viejo encima.
+La web publicada no puede leer el escritorio: agregar carpetas requiere ejecutar la importación, compilar y publicar la nueva versión por el flujo habitual del repositorio. La compilación usa el catálogo guardado y no depende de que exista la carpeta del escritorio en el servidor.
 
-## Dónde están las páginas de los estudiantes
+## Desarrollo
 
-`src/data/students.ts` contiene la lista de los 48 estudiantes de 9.º A y 9.º C. `src/data/publishedProjects.ts` controla qué proyectos están publicados.
+```powershell
+npm install
+npm run dev
+```
 
-Cuando recibas un proyecto, colocá la carpeta HTML/CSS dentro de `public/estudiantes/<ID>/index.html` y agregá su identificador a `publishedProjectIds`. Si todavía no se publicó, se muestra la pantalla de presentación prevista.
+## Optimización
 
-## Validación
+- Portada y visor de proyectos se descargan por separado. La portada usa una composición de ventanas y tarjetas animadas con CSS; ya no descarga la escultura ni Three.js.
+- Se conservan el diseño y las animaciones existentes, incluyendo su pausa fuera de pantalla y con la pestaña oculta.
+- La portada inicia el autoscroll por defecto tras 5 segundos, sin parámetros en la URL. Se pausa con la interacción y retoma tras 30 segundos de inactividad; respeta la preferencia de movimiento reducido.
+- Fuentes con conexiones anticipadas y `display=swap`, descripción de página y favicon propio.
+- Vercel conserva los recursos con hash durante un año y revalida los trabajos de estudiantes para mostrar actualizaciones.
+- El catálogo incluye solo las entregas. No hay tarjetas de trabajos pendientes.
 
-- Los tipos de TypeScript fueron comprobados con `tsc -b` sin errores.
-- El empaquetado de Vite no se pudo verificar completamente en este entorno porque los `node_modules` del archivo recibido contienen binarios nativos de Windows, mientras que aquí se ejecuta Linux. `npm install` en tu equipo instalará los binarios de Windows adecuados.
-- No se alteraron los nombres ni los datos de los estudiantes.
+`npm test` comprueba identificación, apellidos compuestos, entregas compartidas, importación repetible, nuevas entregas y conservación del catálogo ante nombres ambiguos. `npm run build` comprueba TypeScript y genera `dist/`.
 
-**Importante:** revisar autorización para publicar nombres completos de menores antes de poner la página en internet.
+## Revisión de páginas al importar
+
+Se omiten las páginas vacías, con solo título o sin desarrollo suficiente (menos de 60 palabras fuera de encabezado principal, navegación, estilos, scripts y pie). Este umbral identifica borradores, no evalúa la calidad del trabajo. Las decisiones revisadas y reparaciones puntuales están en `scripts/delivery-review.json`; el resultado de cada importación queda en `scripts/delivery-report.json`.
+
+Si ambas páginas tienen contenido se conservan y se agregan solo las conexiones que falten, con enlaces simples. Los enlaces a páginas descartadas o inexistentes se retiran. Las imágenes locales no entregadas se quitan de la copia para evitar cuadros rotos. Se corrigen errores de ortografía conocidos solo en el texto, sin cambiar las rutas, los estilos, los enlaces externos ni el contenido de los scripts.
+
+Si completan una página antes descartada y supera el umbral de contenido, se incorpora en la siguiente importación. Las correcciones no modifican los originales del escritorio. Esta revisión no verifica los datos históricos ni las afirmaciones de las páginas.
+
+## Galería y recorrido
+
+Todos los estudiantes con entrega cargan al abrir la galería, sin paginación ni botón de carga adicional. Las tarjetas comparten las mismas dimensiones y tipografía en cada tamaño de pantalla; no hay tarjetas destacadas. El autoscroll puede recorrer la lista completa.
+
+La transición «Del aula a la web» ocupa 230svh (210svh en móvil), y la entrada azul de la galería, 72svh (70svh en móvil). El círculo termina de cubrir la pantalla al llegar al cambio de sección para reducir el tramo azul sin contenido.
+
+La importación también corrige enlaces HTML con mayúsculas distintas al nombre del archivo y conserva los fragmentos internos, para que funcionen al publicar en servidores que distinguen mayúsculas.
+
+## Presentación de HTML sin CSS
+
+La excepción solicitada para Sofía Alfaro está guardada en `scripts/student-styles/sofia-alfaro.css`. La importación la incorpora como `styles.css` únicamente mientras falte ese archivo en su carpeta original. Si entrega un CSS propio, se respeta el nuevo archivo. No se modifica el original del escritorio.
+
+## Adaptación para celular
+
+La importación incorpora `/estudiantes/_responsive.css` a cada página. Las reglas de adaptación se activan solo hasta 768 px y conservan colores, fondos, familias tipográficas y estilos originales. Ajustan las imágenes al ancho disponible, apilan las columnas que no caben y pasan a flujo normal los elementos con coordenadas fijas que se superponían.
+
+Las tablas conservan su estructura y se pueden desplazar horizontalmente dentro de su propio contenedor en celular. En escritorio ese contenedor no agrega una caja visual. Se normaliza el viewport, incluyendo los que venían mal escritos. El archivo mantenible es `scripts/student-styles/responsive.css`; `scripts/responsive-pages.mjs` aplica el enlace y los contenedores al importar, sin modificar los originales del escritorio.

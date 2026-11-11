@@ -38,8 +38,7 @@
 .students-gallery__search button { background: none; color: #fff; border: none; padding: 4px; cursor: pointer; }
 .students-gallery__result { padding: 25px 0 23px; text-align: right; font: 500 11px "Space Grotesk", sans-serif; letter-spacing: .08em; color: #a9acbd; }
 .students-gallery__grid { display: grid; grid-template-columns: repeat(12, minmax(0,1fr)); grid-auto-flow: row; gap: clamp(12px, 1.45vw, 22px); }
-.student-poster { --poster-bg: #dae2ff; --poster-ink: #151944; --poster-accent: #3c48ec; --poster-accent2: #fff; grid-column: span 4; min-width: 0; min-height: clamp(330px, 31vw, 480px); position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; padding: clamp(19px,2.3vw,35px); color: var(--poster-ink); background: var(--poster-bg); text-decoration: none; border-radius: 4px; transition: transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .55s; }
-.student-poster--featured { grid-column: span 8; }
+.student-poster { --poster-bg: #dae2ff; --poster-ink: #151944; --poster-accent: #3c48ec; --poster-accent2: #fff; grid-column: span 4; min-width: 0; height: clamp(330px, 31vw, 480px); position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; padding: clamp(19px,2.3vw,35px); color: var(--poster-ink); background: var(--poster-bg); text-decoration: none; border-radius: 4px; transition: transform .55s cubic-bezier(.2,.8,.2,1), box-shadow .55s; }
 .student-poster:hover { transform: translateY(-6px); box-shadow: 0 24px 50px rgba(0,0,0,.25); }
 .student-poster:focus-visible { outline: 4px solid #fff; outline-offset: 4px; }
 .student-poster__art { position: absolute; z-index: -1; inset: 0; overflow: hidden; }
@@ -61,8 +60,6 @@
 .student-poster__last { font: 700 clamp(24px,2.45vw,44px)/.98 "Space Grotesk", sans-serif; letter-spacing: -.075em; overflow-wrap: anywhere; margin-top: 7px; }
 .student-poster__open { display: grid; place-items: center; flex-shrink: 0; width: clamp(42px, 4vw, 57px); aspect-ratio: 1; border: 1px solid currentColor; border-radius: 50%; transition: background .25s, transform .45s; }
 .student-poster:hover .student-poster__open { transform: rotate(45deg); background: var(--poster-accent2); }
-.student-poster--featured .student-poster__last { font-size: clamp(33px, 4vw, 69px); max-width: 650px; }
-.student-poster--featured .student-poster__first { font-size: clamp(20px, 2vw, 31px); }
 /* Each visual family uses the same lightweight structure, not a separate canvas. */
 .artwork-1 .student-poster__shape--main { background: repeating-conic-gradient(from 20deg, var(--poster-accent) 0 8deg, transparent 9deg 18deg); clip-path: circle(49%); }
 .artwork-1 .student-poster__shape--secondary { border-radius: 1%; transform: rotate(-20deg); }
@@ -73,9 +70,6 @@
 .artwork-6 .student-poster__shape--main { background: repeating-radial-gradient(ellipse at 80% 40%,transparent 0 12px,var(--poster-accent) 13px 18px,transparent 19px 38px); transform: rotate(28deg); }
 .artwork-7 .student-poster__shape--main { background: repeating-conic-gradient(var(--poster-accent) 0 10deg, transparent 10deg 25deg); clip-path: polygon(50% 0,100% 100%,0 100%); }
 .students-gallery__empty { border: 1px solid #464655; padding: 72px 18px; text-align: center; color: #ddd; font-size: 18px; }
-.students-gallery__more { display: flex; align-items: center; gap: 24px; margin: 75px auto 0; padding: 12px 0; background: transparent; color: #fff; border: 0; cursor: pointer; font: 700 15px "Space Grotesk", sans-serif; }
-.students-gallery__more-icon { display: grid; place-items: center; width: 56px; height: 56px; border: 1px solid #8c91aa; border-radius: 50%; transition: transform .3s,background .3s; }
-.students-gallery__more:hover .students-gallery__more-icon { transform: translateY(5px); background: #2737a4; }
-@media(max-width: 1120px) { .student-poster { grid-column: span 6; min-height: 360px; } .student-poster--featured { grid-column: span 12; } .student-poster__last { font-size: clamp(27px,4vw,40px); } .students-gallery__count-number { font-size: 8.5rem; } }
-@media(max-width: 720px) { .students-gallery { padding: 90px 5% 100px; } .students-gallery__heading { align-items: flex-start; } .students-gallery__intro h2 { font-size: clamp(3.65rem,13vw,5.7rem); } .students-gallery__intro p { max-width: 270px; } .students-gallery__count { display: none; } .students-gallery__tools { align-items: stretch; flex-direction: column; } .students-gallery__search { width: 100%; } .student-poster { grid-column: span 12; min-height: 360px; padding: 24px; } .student-poster--featured { grid-column: span 12; } .student-poster__first { font-size: 21px; } .student-poster__last,.student-poster--featured .student-poster__last { font-size: clamp(29px,8vw,48px); } .student-poster__shape--main { right: -12%; } }
+@media(max-width: 1120px) { .student-poster { grid-column: span 6; height: 360px; } .student-poster__last { font-size: clamp(27px,4vw,40px); } .students-gallery__count-number { font-size: 8.5rem; } }
+@media(max-width: 720px) { .students-gallery { padding: 90px 5% 100px; } .students-gallery__heading { align-items: flex-start; } .students-gallery__intro h2 { font-size: clamp(3.65rem,13vw,5.7rem); } .students-gallery__intro p { max-width: 270px; } .students-gallery__count { display: none; } .students-gallery__tools { align-items: stretch; flex-direction: column; } .students-gallery__search { width: 100%; } .student-poster { grid-column: span 12; height: 360px; padding: 24px; } .student-poster__first { font-size: 21px; } .student-poster__last { font-size: clamp(29px,8vw,48px); } .student-poster__shape--main { right: -12%; } }
 @media(prefers-reduced-motion: reduce) { .student-poster,.student-poster__shape,.student-poster__initials,.student-poster__shine,.student-poster__open { transition: none; } }

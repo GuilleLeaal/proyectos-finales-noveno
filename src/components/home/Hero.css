@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 /* One monumental headline, one artwork, one action. */
 .atelier-hero {
@@ -41,41 +40,19 @@
 .atelier-art {
   position: absolute;
   z-index: -1;
-  top: 49%;
-  right: -5.5%;
-  width: min(74vw, 1370px);
-  height: min(102svh, 1060px);
-  transform: translateY(-50%);
+  top: 50%;
+  right: 2%;
+  width: min(46vw, 800px);
+  height: min(46vw, 800px);
+  transform: translateY(-46%);
   pointer-events: none;
-}
-
-.atelier-art-aura {
-  position: absolute;
-  inset: 14% 6% 10%;
-  border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(87, 99, 239, 0.15), rgba(170, 182, 251, 0.055) 44%, transparent 70%);
-  filter: blur(36px);
-}
-
-.atelier-art-entry,
-.liquid-sculpture,
-.liquid-sculpture canvas {
-  width: 100%;
-  height: 100%;
 }
 
 .atelier-art-entry {
   position: relative;
-  transform-origin: 55% 50%;
-  will-change: transform, opacity;
+  width: 100%;
+  height: 100%;
 }
-
-.liquid-sculpture {
-  position: absolute;
-  inset: 0;
-}
-
-.liquid-sculpture canvas { display: block; }
 
 .atelier-header {
   z-index: 3;
@@ -151,8 +128,9 @@
 
 .atelier-intro {
   display: flex;
-  align-items: flex-end;
-  gap: clamp(32px, 6vw, 110px);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
   margin-top: clamp(33px, 5.4vh, 58px);
 }
 
@@ -222,9 +200,9 @@
 .atelier-wordmark:focus-visible { outline: 2px solid var(--blue); outline-offset: 7px; }
 
 @media (max-width: 1100px) {
-  .atelier-art { width: 87vw; right: -25%; opacity: 0.92; }
+  .atelier-art { width: 47vw; height: 51vw; right: 1%; }
   .atelier-title { font-size: clamp(63px, 9.4vw, 110px); }
-  .atelier-intro { gap: 35px; }
+  .atelier-intro { gap: 26px; flex-direction: column; align-items: flex-start; }
   .atelier-description { max-width: 290px; }
 }
 
@@ -232,20 +210,20 @@
   .atelier-hero { min-height: max(690px, 100svh); }
   .atelier-header { padding: 25px 6% 0; grid-template-columns: 1fr auto; }
   .atelier-header-label { display: none; }
-  .atelier-main { align-items: flex-end; padding: 280px 6% 76px; }
+  .atelier-main { align-items: flex-end; padding: 340px 6% 60px; }
   .atelier-title { font-size: clamp(43px, 9.55vw, 74px); line-height: 0.97; letter-spacing: -0.085em; }
   .atelier-intro { align-items: flex-start; flex-direction: column; gap: 24px; margin-top: 29px; }
   .atelier-description { max-width: 310px; font-size: 15px; line-height: 1.58; }
   .atelier-cta { font-size: 14px; gap: 18px; }
   .atelier-cta-icon { width: 54px; height: 54px; }
-  .atelier-art { width: 128vw; height: 66svh; right: -37%; top: 3%; transform: none; opacity: 0.93; }
+  .atelier-art { width: min(90vw, 450px); height: min(83vw, 415px); right: 5%; top: 88px; transform: none; }
   .atelier-ambient { background: linear-gradient(180deg, #f6f4ef, #f2f0eb); }
 }
 
 @media (max-width: 380px) {
   .atelier-title { font-size: 10vw; }
-  .atelier-main { padding-top: 245px; padding-bottom: 55px; }
-  .atelier-art { top: 0; right: -42%; width: 138vw; }
+  .atelier-main { padding-top: 310px; padding-bottom: 45px; }
+  .atelier-art { top: 78px; right: 4%; width: 92vw; height: 88vw; }
 }
 
 @media (prefers-reduced-motion: reduce) {

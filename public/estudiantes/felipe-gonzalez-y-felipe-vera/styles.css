@@ -1,0 +1,206 @@
+
+.headerPapa{
+      color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 48px;
+}
+
+.h1papa1{
+     color: #a8f3fd;
+     text-align: center;
+     font-size: 36px;
+     
+}
+
+.pPapa1{
+    color: #000000;
+     text-align: center;
+}
+
+.h1Papa2{
+     color: #00adfd;
+     font-size: 28px;
+    text-align: left;
+}
+
+.pPapa2{
+     width: 300px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.bodyPapa{
+    background-image: url("https://media.istockphoto.com/id/1043390946/es/foto/la-cruz-en-el-fondo-oto%C3%B1o.jpg?s=612x612&w=0&k=20&c=kjBWkhz0WSnWbWX6iuXGUa9vuRAFMRSKhyqoQokL29Y=");
+    background-size: cover;
+    background-position: center;
+}
+
+.imgPapa1{
+      position: absolute;
+    right: 50px;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 400px;
+}
+
+.h1papa3{
+      color: #f7c55a;
+        position: absolute;
+    right: 50px;
+    top: 500px;
+    width: 400px;
+    margin: 0;
+}
+
+.pPapa3{
+    position: absolute;
+    right: 50px;
+    top: 570px;
+    width: 400px;
+}
+
+.h1papa4{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #ffc67b;
+    margin-bottom: 5px;
+}
+
+.pPapa4{
+   width: 400px;
+    margin: 0 auto;
+    text-align: center;
+
+    position: relative;
+    left: -30px;
+    top: -290px;
+}
+
+.footerPapa1 p{
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    font-size: 24px;
+   
+}
+
+.bodyderecho{
+       background-image: url("https://tse1.mm.bing.net/th/id/OIP.OTmsQcU31320Z-n6mnu4AgHaE8?r=0&w=2500&h=1667&rs=1&pid=ImgDetMain&o=7&rm=3");
+    background-size: cover;
+    background-position: center;
+}
+
+.footerPapa1 a{
+    font-size: 24px;
+}
+
+.heaederderecho{
+      color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 48px;
+}
+
+.heaederderecho p{
+     color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 24px;
+    top: 500px;
+}
+
+.h1derecho1{
+     color: #a8f3fd;
+     text-align: center;
+     font-size: 36px;
+     
+}
+
+.pderecho1{
+    color: #000000;
+     text-align: center;
+      font-size: 20px;
+       color: white
+}
+
+.h1derecho2{
+      color: #a8f3fd;
+        position: absolute;
+    right: 50px;
+    top: 370px;
+    width: 400px;
+    margin: 0;
+}
+
+.pderecho2{
+    position: absolute;
+    right: 50px;
+    top: 420px;
+    width: 430px;
+    font-size: 20px;
+     color: white
+}
+
+.imgderecho1{
+    position: absolute;
+    left: 50px;
+    top: 70%;
+    transform: translateY(-50%);
+    width: 400px;
+}
+
+.h1derecho3{
+    color: #a8f3fd;
+    position: absolute;
+    left: 50px;
+    top: 600px;
+    width: 400px;
+    margin: 0;
+}
+
+.pderecho3{
+    position: absolute;
+    left: 50px;
+    top: 670px;
+    width: 400px;
+     color: white
+}
+
+.h1derecho4{
+      color: #a8f3fd;
+        position: absolute;
+    right: 50px;
+    top: 700px;
+    width: 400px;
+    margin: 0;
+}
+
+.pderecho4{
+    position: absolute;
+    right: 50px;
+    top: 760px;
+    width: 430px;
+    font-size: 20px;
+     color: white
+}
+
+.footerderecho1{
+    position: relative;
+    margin-top: 500px;
+    margin-left: 50px;
+    width: 400px;
+    color: white;
+}
+
+.footerderecho1 p{
+     color: white;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+    font-size: 24px;
+}
+
+.footerderecho1 a {
+     font-size: 24px;
+}

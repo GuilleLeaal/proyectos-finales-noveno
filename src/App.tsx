@@ -1,40 +1,22 @@
-import { useLayoutEffect } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Hero from "./components/home/Hero";
-import KineticBridge from "./components/transition/KineticBridge";
-import GalleryEntrance from "./components/gallery/GalleryEntrance";
-import StudentGallery from "./components/gallery/StudentGallery";
-import StudentProjectPage from "./pages/StudentProjectPage";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 import { ProjectNavigationProvider } from "./components/navigation/ProjectNavigationTransition";
 import ExhibitionAutoScroll from "./components/exhibition/ExhibitionAutoScroll";
 
-function Home() {
-  const location = useLocation();
-  useLayoutEffect(() => {
-    if (location.hash === "#estudiantes") {
-      document.getElementById("estudiantes")?.scrollIntoView({ behavior: "instant" });
-    }
-  }, [location.hash]);
-
-  return (
-    <>
-      <Hero />
-      <KineticBridge />
-      <GalleryEntrance />
-      <StudentGallery />
-    </>
-  );
-}
+const Home = lazy(() => import("./pages/HomePage"));
+const StudentProjectPage = lazy(() => import("./pages/StudentProjectPage"));
 
 export default function App() {
   return (
     <ProjectNavigationProvider>
       <ExhibitionAutoScroll />
+      <Suspense fallback={<div role="status" style={{ minHeight: "100svh", padding: "2rem" }}>Cargando…</div>}>
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/proyectos/:id" element={<StudentProjectPage />} />
       <Route path="*" element={<Home />} />
       </Routes>
+      </Suspense>
     </ProjectNavigationProvider>
   );
 }

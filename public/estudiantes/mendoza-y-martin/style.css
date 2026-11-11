@@ -1,0 +1,86 @@
+
+body {
+    background-color: #fceef5;
+    font-family: Arial;
+    color: #444444;
+    margin: 30px;
+}
+
+h1 {
+    color: #765b91;
+    background-color: #e8d9f5;
+    text-align: center;
+    padding: 25px;
+}
+
+h2 {
+    color: #765b91;
+    background-color: #e6ddf5;
+    padding: 12px;
+}
+
+h3 {
+    color: #a16d91;
+}
+
+p {
+    background-color: white;
+    font-size: 16px;
+    padding: 15px;
+}
+
+ul {
+    background-color: #e5f3f5;
+    padding: 20px;
+}
+
+li {
+    margin: 10px;
+}
+
+hr {
+    border: 1px solid #d6c4e8;
+    margin: 25px;
+}
+
+.imagen {
+    width: 250px;
+    float: right;
+    margin: 10px;
+    border: 3px solid #e8d9f5;
+}
+
+table {
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #e8d9f5;
+    padding: 12px;
+}
+
+td {
+    background-color: #f5edf9;
+    padding: 12px;
+}
+
+.final {
+    background-color: #e8d9f5;
+    text-align: center;
+    padding: 20px;
+}
+
+.integrantes {
+    text-align: center;
+    background-color: #e8d9f5;
+}
+
+.datos {
+    text-align: center;
+    background-color: #f5edf9;
+    color: #765b91;
+    padding: 20px;
+    font-size: 17px;
+}

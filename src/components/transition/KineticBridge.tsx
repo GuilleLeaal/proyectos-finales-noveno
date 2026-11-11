@@ -54,13 +54,12 @@ export default function KineticBridge() {
       section.style.setProperty("--symbol-turn", `${p * 155}deg`);
       section.style.setProperty("--graphic-opacity", `${1 - ease(ramp(p, 0.61, 0.76))}`);
 
-      // Stage 3: a cobalt aperture grows to fill the screen. The next
-      // section begins with the exact same blue for a seamless handoff.
-      // Start earlier; a small 14vmin aperture can grow visibly for nearly
-      // a full viewport of scrolling before it blankets the next section.
-      const open = smooth(ramp(p, 0.57, 0.96));
-      section.style.setProperty("--portal-scale", `${0.06 + Math.pow(open, 1.22) * 25}`);
-      section.style.setProperty("--portal-opacity", `${smooth(ramp(p, 0.565, 0.635))}`);
+      // Fill the viewport only at the handoff, avoiding a long solid-blue hold.
+      const open = smooth(ramp(p, 0.65, 1));
+      const apertureSize = Math.min(220, Math.max(100, Math.min(window.innerWidth, window.innerHeight) * 0.14));
+      const coverScale = Math.hypot(window.innerWidth, window.innerHeight) / apertureSize * 1.05;
+      section.style.setProperty("--portal-scale", `${0.06 + open * coverScale}`);
+      section.style.setProperty("--portal-opacity", `${smooth(ramp(p, 0.64, 0.70))}`);
     };
 
     const schedule = () => {

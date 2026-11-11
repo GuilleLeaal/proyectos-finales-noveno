@@ -1,0 +1,128 @@
+body {
+    background-color: #fffb25;
+    font-family: Arial;
+    color: #202020;
+    margin: 8px;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+li{
+    text-align: center;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%; /* O el ancho que prefieras */
+}
+header {
+    background-color: #ffae18;
+    color:black;
+    text-align: center;
+    padding: 18px;
+     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.titulopapa {
+    font-size: 30px;
+    margin: 5px;
+}
+
+.subtitulopapa {
+    font-size: 19px;
+    margin: 5px;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0; /* Opcional: elimina el espacio extra de la izquierda si es necesario */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #e08702;
+
+    padding: 7px;
+    margin: 4px;
+}
+
+nav a:hover {
+    background-color: #ad6800;
+}
+
+main {
+    width: 88%;
+    margin: 20px auto;
+}
+
+section {
+    background-color:white;
+    padding: 17px;
+    margin-bottom: 18px;
+}
+
+section h1 {
+    color:black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section h2 {
+    color: #000000;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+ul {
+    line-height: 1.7;
+}
+
+
+
+table {
+    margin-top: 15px;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 9px;
+}
+
+th {
+    background-color :black;
+    color: white;
+}
+
+footer {
+    background-color: #e07f01;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}

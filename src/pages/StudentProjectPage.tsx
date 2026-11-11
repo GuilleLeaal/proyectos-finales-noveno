@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { ArrowLeft, ArrowUpRight, Maximize2, Minimize2 } from "lucide-react";
+import { ArrowLeft, Maximize2, Minimize2 } from "lucide-react";
 import { findStudent } from "../data/students";
 import "./StudentProjectPage.css";
 
@@ -9,6 +9,7 @@ export default function StudentProjectPage() {
   const student = findStudent(id);
   const viewerRef = useRef<HTMLDivElement>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [fullscreenError, setFullscreenError] = useState("");
 
   useEffect(() => {
     const update = () => setIsFullscreen(document.fullscreenElement === viewerRef.current);
@@ -16,79 +17,47 @@ export default function StudentProjectPage() {
     return () => document.removeEventListener("fullscreenchange", update);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" });
+    setFullscreenError("");
+    const previousTitle = document.title;
+    if (student) document.title = `${student.firstName} ${student.lastName} | Proyectos Finales 2026`;
+    return () => { document.title = previousTitle; };
+  }, [id, student]);
+
   const toggleFullscreen = async () => {
+    setFullscreenError("");
     try {
-      if (document.fullscreenElement === viewerRef.current) {
-        await document.exitFullscreen();
-      } else if (viewerRef.current?.requestFullscreen) {
-        await viewerRef.current.requestFullscreen();
-      }
+      if (document.fullscreenElement === viewerRef.current) await document.exitFullscreen();
+      else if (viewerRef.current?.requestFullscreen) await viewerRef.current.requestFullscreen();
+      else setFullscreenError("Tu navegador no permite ampliar el visor a pantalla completa.");
     } catch {
-      // Browsers may block fullscreen (for instance inside an embedded preview).
+      setFullscreenError("No se pudo abrir la pantalla completa en este navegador.");
     }
   };
 
-  useEffect(() => { window.scrollTo({ top: 0, behavior: "auto" }); }, [id]);
-
   if (!student) {
     return (
-      <main className="project-view project-view--missing">
-        <Link to="/#estudiantes" className="project-view__back"><ArrowLeft size={17}/> Volver a la galería</Link>
-        <h1>No encontramos ese proyecto.</h1>
+      <main className="student-project student-project--missing">
+        <h1>Proyecto no disponible.</h1>
+        <Link to="/#estudiantes" className="student-project__back"><ArrowLeft size={16} /> Volver</Link>
       </main>
     );
   }
 
   return (
-    <main className="project-view">
-      <nav className="project-view__nav">
-        <Link to="/#estudiantes" className="project-view__back"><ArrowLeft size={17}/> Volver a la galería</Link>
-        <span>PF. / 2026</span>
-      </nav>
-
-      <section className="project-view__intro">
-        <div className="project-view__topline"><span>PROYECTO FINAL</span><span>9.º {student.group.slice(-1)} / CIENCIAS DE LA COMPUTACIÓN</span></div>
-        <h1>{student.firstName}<br/><span>{student.lastName}</span></h1>
-        <div className="project-view__separator"/>
-      </section>
-
-      <section className="project-view__showcase">
-        {student.published ? (
-          <div className="project-view__viewer" ref={viewerRef}>
-            <div className="project-view__viewer-heading">
-              <span>SITIO DEL ESTUDIANTE</span>
-              <button
-                type="button"
-                onClick={toggleFullscreen}
-                className="project-view__fullscreen"
-                aria-label={isFullscreen ? "Salir de pantalla completa" : "Ver el proyecto en pantalla completa"}
-              >
-                {isFullscreen ? <Minimize2 size={17} /> : <Maximize2 size={17} />}
-                <span>{isFullscreen ? "Salir de pantalla completa" : "Pantalla completa"}</span>
-              </button>
-            </div>
-            <iframe
-              className="project-view__iframe"
-              src={`/estudiantes/${student.id}/index.html`}
-              title={`Proyecto de ${student.firstName} ${student.lastName}`}
-              loading="lazy"
-              sandbox="allow-scripts allow-forms"
-              allowFullScreen
-              referrerPolicy="no-referrer"
-            />
-          </div>
-        ) : (
-          <div className="project-view__placeholder">
-            <span className="project-view__placeholder-orbit" aria-hidden="true"/>
-            <div className="project-view__placeholder-content">
-              <span>PRÓXIMAMENTE / PROYECTO FINAL</span>
-              <strong>CREANDO<br/>ALGO NUEVO<span>.</span></strong>
-              <p>Este espacio estará disponible cuando se publique el trabajo.</p>
-            </div>
-          </div>
-        )}
-      </section>
-      <Link to="/#estudiantes" className="project-view__end-link">Explorar otros proyectos <ArrowUpRight size={21}/></Link>
+    <main className="student-project">
+      <div className="student-project__viewer" ref={viewerRef}>
+        <header className="student-project__header">
+          <Link to="/#estudiantes" className="student-project__back"><ArrowLeft size={16} /><span>Volver</span></Link>
+          <h1>{student.firstName} {student.lastName}</h1>
+          <button type="button" className="student-project__expand" onClick={toggleFullscreen} aria-label={isFullscreen ? "Salir de pantalla completa" : "Ver el proyecto en pantalla completa"}>
+            {isFullscreen ? <Minimize2 size={16} /> : <Maximize2 size={16} />}<span>{isFullscreen ? "Reducir" : "Ampliar"}</span>
+          </button>
+        </header>
+        {fullscreenError && <p className="student-project__notice" role="status">{fullscreenError}</p>}
+        <iframe key={student.projectPath} className="student-project__iframe" src={student.projectPath} title={`Proyecto de ${student.firstName} ${student.lastName}`} sandbox="allow-scripts allow-forms" allowFullScreen referrerPolicy="no-referrer" />
+      </div>
     </main>
   );
 }

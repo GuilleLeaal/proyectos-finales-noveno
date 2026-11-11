@@ -1,0 +1,299 @@
+[
+  {
+    "id": "9c-nicolas-barros",
+    "firstName": "Nicolás",
+    "lastName": "Barros",
+    "group": "9C",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/barros-y-cibils/index.html"
+  },
+  {
+    "id": "9c-alejo-cibils",
+    "firstName": "Alejo",
+    "lastName": "Cibils",
+    "group": "9C",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/barros-y-cibils/index.html"
+  },
+  {
+    "id": "9c-facundo-bonifacino",
+    "firstName": "Facundo",
+    "lastName": "Bonifacino",
+    "group": "9C",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/bonifacino-y-di-palma/index.html"
+  },
+  {
+    "id": "9c-juan-di-palma",
+    "firstName": "Juan",
+    "lastName": "Di Palma",
+    "group": "9C",
+    "artwork": 5,
+    "published": true,
+    "projectPath": "/estudiantes/bonifacino-y-di-palma/index.html"
+  },
+  {
+    "id": "9a-maximo-cano",
+    "firstName": "Máximo",
+    "lastName": "Cano",
+    "group": "9A",
+    "artwork": 2,
+    "published": true,
+    "projectPath": "/estudiantes/cano-y-castiglioni/index.html"
+  },
+  {
+    "id": "9a-juan-castiglioni",
+    "firstName": "Juan",
+    "lastName": "Castiglioni",
+    "group": "9A",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/cano-y-castiglioni/index.html"
+  },
+  {
+    "id": "9c-clara-ceriani",
+    "firstName": "Clara",
+    "lastName": "Ceriani",
+    "group": "9C",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/ceriani-y-sofia-mendez/index.html"
+  },
+  {
+    "id": "9c-sofia-mendez",
+    "firstName": "Sofía",
+    "lastName": "Méndez",
+    "group": "9C",
+    "artwork": 5,
+    "published": true,
+    "projectPath": "/estudiantes/ceriani-y-sofia-mendez/index.html"
+  },
+  {
+    "id": "9c-juan-corporales",
+    "firstName": "Juan",
+    "lastName": "Corporales",
+    "group": "9C",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/corporales-y-gomendio/index.html"
+  },
+  {
+    "id": "9c-bautista-gomendio",
+    "firstName": "Bautista",
+    "lastName": "Gomendio",
+    "group": "9C",
+    "artwork": 2,
+    "published": true,
+    "projectPath": "/estudiantes/corporales-y-gomendio/index.html"
+  },
+  {
+    "id": "9c-delfina-acevedo",
+    "firstName": "Delfina",
+    "lastName": "Acevedo",
+    "group": "9C",
+    "artwork": 2,
+    "published": true,
+    "projectPath": "/estudiantes/delfina-y-rocio/index.html"
+  },
+  {
+    "id": "9c-rocio-lopez",
+    "firstName": "Rocío",
+    "lastName": "López",
+    "group": "9C",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/delfina-y-rocio/index.html"
+  },
+  {
+    "id": "9a-ana-fantoni",
+    "firstName": "Ana",
+    "lastName": "Fantoni",
+    "group": "9A",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/fantoni-y-rocha/index.html"
+  },
+  {
+    "id": "9a-mikaela-rocha",
+    "firstName": "Mikaela",
+    "lastName": "Rocha",
+    "group": "9A",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/fantoni-y-rocha/index.html"
+  },
+  {
+    "id": "9c-felipe-gonzalez",
+    "firstName": "Felipe",
+    "lastName": "González",
+    "group": "9C",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/felipe-gonzalez-y-felipe-vera/index.html"
+  },
+  {
+    "id": "9c-felipe-vera",
+    "firstName": "Felipe",
+    "lastName": "Vera",
+    "group": "9C",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/felipe-gonzalez-y-felipe-vera/index.html"
+  },
+  {
+    "id": "9a-joaquin-jaurena",
+    "firstName": "Joaquín",
+    "lastName": "Jaurena",
+    "group": "9A",
+    "artwork": 5,
+    "published": true,
+    "projectPath": "/estudiantes/jaurena-y-cabovianco/index.html"
+  },
+  {
+    "id": "9a-joaquin-cabovianco",
+    "firstName": "Joaquín",
+    "lastName": "Cabovianco",
+    "group": "9A",
+    "artwork": 4,
+    "published": true,
+    "projectPath": "/estudiantes/jaurena-y-cabovianco/index.html"
+  },
+  {
+    "id": "9c-luca-laurito",
+    "firstName": "Luca",
+    "lastName": "Laurito",
+    "group": "9C",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+  },
+  {
+    "id": "9c-benjamin-martinez",
+    "firstName": "Benjamín",
+    "lastName": "Martínez",
+    "group": "9C",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+  },
+  {
+    "id": "9c-pedro-abal",
+    "firstName": "Pedro",
+    "lastName": "Abal",
+    "group": "9C",
+    "artwork": 3,
+    "published": true,
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+  },
+  {
+    "id": "9a-macarena-lopez",
+    "firstName": "Macarena",
+    "lastName": "López",
+    "group": "9A",
+    "artwork": 3,
+    "published": true,
+    "projectPath": "/estudiantes/macarena-lara-y-giuliana-martinez/index.html"
+  },
+  {
+    "id": "9a-lara-viana",
+    "firstName": "Lara",
+    "lastName": "Viana",
+    "group": "9A",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/macarena-lara-y-giuliana-martinez/index.html"
+  },
+  {
+    "id": "9a-giuliana-martinez",
+    "firstName": "Giuliana",
+    "lastName": "Martínez",
+    "group": "9A",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/macarena-lara-y-giuliana-martinez/index.html"
+  },
+  {
+    "id": "9a-camila-mendoza",
+    "firstName": "Camila",
+    "lastName": "Mendoza",
+    "group": "9A",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/mendoza-y-martin/index.html"
+  },
+  {
+    "id": "9a-catalina-martin",
+    "firstName": "Catalina",
+    "lastName": "Martin",
+    "group": "9A",
+    "artwork": 2,
+    "published": true,
+    "projectPath": "/estudiantes/mendoza-y-martin/index.html"
+  },
+  {
+    "id": "9a-juan-rojo",
+    "firstName": "Juan",
+    "lastName": "Rojo",
+    "group": "9A",
+    "artwork": 5,
+    "published": true,
+    "projectPath": "/estudiantes/rojo-y-armanetti/index.html"
+  },
+  {
+    "id": "9a-santiago-armanetti",
+    "firstName": "Santiago",
+    "lastName": "Armanetti",
+    "group": "9A",
+    "artwork": 6,
+    "published": true,
+    "projectPath": "/estudiantes/rojo-y-armanetti/index.html"
+  },
+  {
+    "id": "9a-sofia-alfaro",
+    "firstName": "Sofía",
+    "lastName": "Alfaro",
+    "group": "9A",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/sofia-alfaro/index.html"
+  },
+  {
+    "id": "9c-sofia-esquivel",
+    "firstName": "Sofía",
+    "lastName": "Esquivel",
+    "group": "9C",
+    "artwork": 4,
+    "published": true,
+    "projectPath": "/estudiantes/sofia-esquivel-y-feliope-pose/INDEX.HTML"
+  },
+  {
+    "id": "9c-felipe-pose",
+    "firstName": "Felipe",
+    "lastName": "Pose",
+    "group": "9C",
+    "artwork": 2,
+    "published": true,
+    "projectPath": "/estudiantes/sofia-esquivel-y-feliope-pose/INDEX.HTML"
+  },
+  {
+    "id": "9c-sofia-reina",
+    "firstName": "Sofía",
+    "lastName": "Reina",
+    "group": "9C",
+    "artwork": 1,
+    "published": true,
+    "projectPath": "/estudiantes/sofia-reina-y-eva-paiva/papa.html"
+  },
+  {
+    "id": "9c-evangelina-paiva",
+    "firstName": "Evangelina",
+    "lastName": "Paiva",
+    "group": "9C",
+    "artwork": 3,
+    "published": true,
+    "projectPath": "/estudiantes/sofia-reina-y-eva-paiva/papa.html"
+  }
+]

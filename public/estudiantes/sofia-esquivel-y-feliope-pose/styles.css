@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    line-height: 1.7;
+}
+header {
+    background-color: #142d4e;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #62d6d0;
+  }
+ 
+.hero {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(12, 35, 65, 0.72),
+        rgba(12, 35, 65, 0.72)),
+        url("imagenes/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #24a6a0;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #187c78;
+    transform: scale(1.05);
+}
+ main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.introduccion,
+.seccion,
+.consejos,
+.reflexion {
+    background-color: white;
+    padding: 35px;
+    margin: 35px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+h2 {
+    color: #17466c;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #168d8a;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+.seccion img,
+.introduccion img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px auto;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.consejos ol {
+    padding-left: 25px;
+}
+
+.consejos li {
+    margin: 12px 0;
+}
+.reflexion {
+    background-color: #dff4f2;
+    text-align: center;
+    border-left: 6px solid #24a6a0;
+}
+
+.reflexion h2 {
+    color: #137c78;
+}
+.papa-hero {
+    background:
+        linear-gradient(rgba(25, 30, 60, 0.7),
+        rgba(25, 30, 60, 0.7)),
+        url("imagenes/papa.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+.seccion ul {
+    padding-left: 25px;
+}
+
+.seccion li {
+    margin-bottom: 12px;
+}
+footer {
+    background-color: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #62d6d0;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .introduccion,
+    .seccion,
+    .consejos,
+    .reflexion {
+        padding: 22px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
+

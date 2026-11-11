@@ -10,7 +10,7 @@
   --portal-scale: .06;
   --portal-opacity: 0;
   position: relative;
-  height: 365svh;
+  height: 230svh;
   background: #101221;
 }
 
@@ -134,7 +134,7 @@
 }
 
 @media (max-width: 760px) {
-  .kinetic-bridge { height: 320svh; }
+  .kinetic-bridge { height: 210svh; }
   .kinetic-bridge__headline { padding-inline: 6%; }
   .kinetic-bridge__line { font-size: clamp(2.9rem, 11.5vw, 5.9rem); }
   .kinetic-bridge__disc { width: 140vw; right: -65vw; top: 15%; }

@@ -1,0 +1,23 @@
+body {
+    background-image: url(https://media.admagazine.com/photos/618a64b158ac69e38abb6052/4:3/w_1600,c_limit/73959.jpg);
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    }                  
+.headerPapa{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.section{
+    text-align: left;
+}
+
+table
+{
+    border-style: inset;
+    width: 100%;
+}
+

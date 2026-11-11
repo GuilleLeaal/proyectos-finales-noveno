@@ -1,0 +1,44 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f9f4;
+    color: #2c3e50;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #4caf50;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+h4 {
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.fotoPapa {
+    width: 400px;
+}

@@ -1,0 +1,59 @@
+header h1{
+    color:rgb(153, 178, 194)
+    
+}
+body{
+background-color: rgb(255, 238, 209);
+font-family: fantasy;
+}
+img{width: 400px;
+
+}
+
+section{
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(233, 202, 145);
+    border-radius: 13px;
+    border-left: 5px solid rgb(99, 121, 160);
+}
+
+header h1{
+    font-size: 80px;
+color: rgb(103, 145, 179);
+}
+
+p{
+    font-family: serif;
+    font-size: 30px;
+    color: rgb(  99, 121, 160
+);
+}
+
+h2{
+    font-family: serif;
+    font-size: 30px;
+color: rgb(118, 149, 156);
+}
+
+header{
+    text-align: center;
+    background-color: rgb(232, 185, 115);
+    
+}
+img{
+    
+    width: 600px
+   
+    
+}
+h1{
+    color: rgb(78, 128, 139);
+}
+section{
+    text-align: center;
+}
+body{
+   background-image:url(https://www.romevisitpass.com/wp-content/uploads/sites/2/2026/06/ChatGPT-Image-17-giu-2026-17_12_34.png);
+   
+}

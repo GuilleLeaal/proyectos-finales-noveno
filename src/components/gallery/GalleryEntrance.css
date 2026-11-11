@@ -1,7 +1,7 @@
 .gallery-entrance {
   position: relative;
   isolation: isolate;
-  min-height: 108svh;
+  min-height: 72svh;
   display: grid;
   align-items: center;
   overflow: hidden;
@@ -14,8 +14,8 @@
   position: relative;
   display: grid;
   align-items: center;
-  min-height: 108svh;
-  padding: clamp(45px, 8vw, 120px) clamp(24px, 5vw, 96px);
+  min-height: 72svh;
+  padding: clamp(35px, 4vw, 64px) clamp(24px, 5vw, 96px);
 }
 
 .gallery-entrance__stage::before {
@@ -34,7 +34,7 @@
 }
 
 .gallery-entrance__overline {
-  margin: 0 0 clamp(35px, 5vw, 90px);
+  margin: 0 0 clamp(22px, 3vw, 40px);
   font-size: clamp(10px, .8vw, 13px);
   font-weight: 700;
   letter-spacing: .18em;
@@ -46,7 +46,7 @@
 .gallery-entrance__title {
   margin: 0;
   max-width: 11ch;
-  font-size: clamp(4.5rem, 11.4vw, 13.5rem);
+  font-size: clamp(4rem, 9.5vw, 10rem);
   line-height: .87;
   letter-spacing: -.105em;
   font-weight: 700;
@@ -144,8 +144,8 @@
 
 @media (max-width: 760px) {
   .gallery-entrance,
-  .gallery-entrance__stage { min-height: 92svh; }
-  .gallery-entrance__stage { align-items: end; padding: 60px 6% 90px; }
+  .gallery-entrance__stage { min-height: 70svh; }
+  .gallery-entrance__stage { align-items: end; padding: 40px 6% 50px; }
   .gallery-entrance__copy { z-index: 2; }
   .gallery-entrance__title { font-size: clamp(3.7rem, 14.3vw, 7rem); }
   .gallery-entrance__overline { margin-bottom: 20px; }

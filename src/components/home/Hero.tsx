@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { animate, createScope, stagger } from "animejs";
 import { ArrowDownRight } from "lucide-react";
-import LiquidSculpture from "./LiquidSculpture";
 import "./Hero.css";
+import ProjectComposition from "./ProjectComposition";
 
 export default function Hero() {
   const rootRef = useRef<HTMLElement>(null);
@@ -15,9 +15,8 @@ export default function Hero() {
     const scope = createScope({ root }).add(() => {
       animate(".atelier-art-entry", {
         opacity: [0, 1],
-        scale: [0.79, 1],
-        rotate: ["-12deg", "0deg"],
-        duration: 2200,
+        y: [30, 0],
+        duration: 1400,
         ease: "out(4)",
       });
       animate(".atelier-title-line", {
@@ -68,9 +67,8 @@ export default function Hero() {
       <div className="atelier-ambient" aria-hidden="true" />
 
       <div className="atelier-art" aria-hidden="true">
-        <div className="atelier-art-aura" />
         <div className="atelier-art-entry">
-          <LiquidSculpture />
+          <ProjectComposition />
         </div>
       </div>
 

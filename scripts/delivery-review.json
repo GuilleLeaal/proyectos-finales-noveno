@@ -1,0 +1,279 @@
+{
+  "Bonifacino y Di Palma": {
+    "pages": {
+      "papa.html": {
+        "replacements": [
+          [
+            "<header>\n    \n    </section>",
+            "</header>"
+          ],
+          [
+            "Martínez.Nació",
+            "Martínez. Nació"
+          ],
+          [
+            "Visitara 3",
+            "Visitará 3"
+          ],
+          [
+            "actividades: Juega",
+            "actividades: juega"
+          ],
+          [
+            "tenis, lee libros, sale a caminar, nada, y",
+            "tenis, lee libros, sale a caminar, nada y"
+          ]
+        ]
+      }
+    }
+  },
+  "Delfina y Rocio": {
+    "pages": {
+      "papa.html": {
+        "truncateAfterFirstFooter": true
+      }
+    }
+  },
+  "Macarena Lara y Giuliana Martinez": {
+    "pages": {
+      "papa.html": {
+        "replacements": [
+          [
+            "<h1>Encuentros principales de la visita papal</h1>",
+            "<caption>Encuentros principales de la visita papal</caption>"
+          ],
+          [
+            "<p>3. <a href=\"https://www.vatican.va/content/vatican/es.html\">",
+            "<p>2. <a href=\"https://www.vatican.va/content/vatican/es.html\">"
+          ]
+        ]
+      }
+    }
+  },
+  "Laurito Benjamin Martinez y Pedro Abal": {
+    "exclude": {
+      "derecho.html": "Solo una frase introductoria y una cita; sin desarrollo del tema."
+    }
+  },
+  "Sofia Reina y Eva Paiva": {
+    "exclude": {
+      "index.html": "Solo navegación y título, sin contenido desarrollado."
+    }
+  },
+  "Rojo y Armanetti": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "Juan Rojo y Santiago armanetti",
+            "Juan Rojo y Santiago Armanetti"
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "juan rojo y santiago armanetti",
+            "Juan Rojo y Santiago Armanetti"
+          ]
+        ]
+      }
+    }
+  },
+  "Sofia Esquivel y Feliope pose": {
+    "pages": {
+      "INDEX.HTML": {
+        "replacements": [
+          [
+            "proyecto_Felipe Pose y Sofia esquivel_09/11/26/\n",
+            ""
+          ],
+          [
+            "Felipe Pose y Sofia Esquivel.",
+            "Felipe Pose y Sofía Esquivel."
+          ]
+        ]
+      }
+    }
+  },
+  "Cano y Castiglioni": {
+    "exclude": {
+      "papa.html": "Documento vacío, sin texto ni contenido desarrollado."
+    },
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "Hospitales publicos",
+            "Hospitales públicos"
+          ],
+          [
+            "origen del derecho a la Salud",
+            "Origen del derecho a la salud"
+          ],
+          [
+            "¿cómo se aplica el derecho a la salud y dificultades?",
+            "¿Cómo se aplica el derecho a la salud y qué dificultades enfrenta?"
+          ],
+          [
+            "<h2>conclusión</h2>",
+            "<h2>Conclusión</h2>"
+          ],
+          [
+            "la justicia y la seguridad\n",
+            "la justicia y la seguridad.\n"
+          ],
+          [
+            "src=\"https://styluspub.presswarehouse.com/browse/book/9789243590288/El-Derecho-a-la-salud\"",
+            "src=\"imagenes/images%20salud.jpg\""
+          ]
+        ]
+      }
+    }
+  },
+  "Fantoni y Rocha": {
+    "pages": {
+      "anafantoniferia.html": {
+        "replacements": [
+          [
+            "Paysandú.También",
+            "Paysandú. También"
+          ],
+          [
+            "Fue importante por que da renacer de jovenes catolicos",
+            "Fue importante porque representa un renacer para los jóvenes católicos."
+          ]
+        ]
+      }
+    }
+  },
+  "Mendoza y Martin": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "Catalina Lain",
+            "Catalina Martin"
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "Catalina Lain",
+            "Catalina Martin"
+          ],
+          [
+            "src=\"Jovenes.jpeg\"",
+            "src=\"jovenes.jpeg\""
+          ]
+        ]
+      }
+    }
+  },
+  "Barros y Cibils": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "apovechar",
+            "aprovechar"
+          ],
+          [
+            "vergunza",
+            "vergüenza"
+          ],
+          [
+            "conraer",
+            "contraer"
+          ],
+          [
+            "queria",
+            "quería"
+          ],
+          [
+            "decidir con responsabilidad es priorizar",
+            "Decidir con responsabilidad es priorizar"
+          ],
+          [
+            "en un futuro lejano o cercano\n",
+            "en un futuro lejano o cercano.\n"
+          ]
+        ]
+      }
+    }
+  },
+  "Ceriani y Sofia Mendez": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "Derecho a decir \"Si\" y \"No\"",
+            "Derecho a decir \"Sí\" y \"No\""
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "La llegada del Papa a Uruguay!",
+            "¡La llegada del Papa a Uruguay!"
+          ],
+          [
+            "¿PORQUE EL PAPA LEON XIV DECIDIO COMENZAR SU RECORRIDO POR URUGUAY?",
+            "¿POR QUÉ EL PAPA LEÓN XIV DECIDIÓ COMENZAR SU RECORRIDO POR URUGUAY?"
+          ],
+          [
+            "COMUNIDAD CATOLICA URUGUAYA",
+            "COMUNIDAD CATÓLICA URUGUAYA"
+          ],
+          [
+            "PAPA LEON XIV",
+            "PAPA LEÓN XIV"
+          ]
+        ]
+      }
+    }
+  },
+  "Felipe Gonzalez y Felipe Vera": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "opinion del Papa León XIV",
+            "Opinión del papa León XIV"
+          ],
+          [
+            "pocos.Una",
+            "pocos. Una"
+          ],
+          [
+            "es:\"La IA",
+            "es: \"La IA"
+          ],
+          [
+            "Iformacion usada principalmente",
+            "Información utilizada"
+          ],
+          [
+            "información cientifica",
+            "información científica"
+          ]
+        ]
+      }
+    }
+  },
+  "Sofia Alfaro": {
+    "styleFile": "sofia-alfaro.css",
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "alt=\"Presion social\"",
+            "alt=\"Presión social\""
+          ]
+        ]
+      }
+    }
+  }
+}
