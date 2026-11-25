@@ -1,5 +1,24 @@
 import { timingSafeEqual } from "node:crypto";
 
+const attemptWindowMs = 10 * 60 * 1000;
+const maxAttempts = 5;
+
+export function createGradeAttemptLimiter() {
+  const attempts = new Map();
+
+  return (id) => {
+    const now = Date.now();
+    const attempt = attempts.get(id);
+    if (!attempt || attempt.until <= now) {
+      attempts.set(id, { count: 1, until: now + attemptWindowMs });
+      return true;
+    }
+    if (attempt.count >= maxAttempts) return false;
+    attempt.count++;
+    return true;
+  };
+}
+
 export function readGradeAccess(value) {
   if (!value) return null;
   try {
@@ -21,7 +40,7 @@ function reply(status, body, headers = {}) {
   return Response.json(body, { status, headers: { "Cache-Control": "no-store", ...headers } });
 }
 
-export async function respondToGradeLookup(request, records, checkAttempts) {
+export async function respondToGradeLookup(request, records, canAttempt) {
   if (request.method !== "POST") return reply(405, { error: "method" }, { Allow: "POST" });
   if (!records) return reply(503, { error: "unavailable" });
 
@@ -40,14 +59,7 @@ export async function respondToGradeLookup(request, records, checkAttempts) {
   const record = records.get(studentId);
   if (!record) return reply(403, { error: "code" });
 
-  let limit;
-  try {
-    limit = await checkAttempts(studentId, request);
-  } catch {
-    return reply(503, { error: "unavailable" });
-  }
-  if (limit === "blocked") return reply(429, { error: "attempts" });
-  if (limit !== "allowed") return reply(503, { error: "unavailable" });
+  if (!canAttempt(studentId)) return reply(429, { error: "attempts" });
 
   const [expected, grade, feedback] = record;
   const matches = timingSafeEqual(Buffer.from(code.replace("-", "")), Buffer.from(expected));
