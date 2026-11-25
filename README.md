@@ -44,6 +44,20 @@ npm install
 npm run dev
 ```
 
+## Consulta de notas
+
+El botón **Ver mi nota** consulta la función del sitio con un código personal de seis dígitos. Las notas, devoluciones y códigos se leen de una variable privada del servidor.
+
+Para actualizar una evaluación, editá la nota, el estado o la devolución en el archivo privado de accesos. Ejecutá el comando desde el repositorio para regenerar `GRADE_ACCESS` en `.env.local`. Vite carga esa variable al iniciar.
+
+```powershell
+node scripts/export-grade-access.mjs "C:\ruta\Codigos privados - Noveno 2026.txt"
+```
+
+Para publicar en Vercel, agregá `GRADE_ACCESS` como variable sensible de producción con el valor de `.env.local` y mantené habilitadas las variables del sistema. En **Firewall**, agregá y publicá una regla de tipo **@vercel/firewall** con el ID `noveno-codigos` y un límite de **5 solicitudes en 600 segundos**. La función aplica la regla por estudiante en el dominio de producción y suspende la consulta si la protección no está disponible. Los cambios en la variable se toman en el siguiente despliegue. [Configuración de la regla](https://vercel.com/docs/vercel-firewall/vercel-waf/rate-limiting-sdk)
+
+Guardá el archivo privado de accesos fuera del repositorio y entregá a cada estudiante únicamente su código.
+
 ## Optimización
 
 - Portada y visor de proyectos se descargan por separado. La portada usa una composición de ventanas y tarjetas animadas con CSS; ya no descarga la escultura ni Three.js.

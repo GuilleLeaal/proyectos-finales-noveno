@@ -1,5 +1,21 @@
 [
   {
+    "folder": "Acuna y Camara",
+    "entry": "index.html",
+    "included": [
+      "index.html"
+    ],
+    "excluded": [
+      {
+        "file": "papa.html",
+        "reason": "Documento vacío, sin texto ni contenido desarrollado."
+      }
+    ],
+    "repairs": [
+      "index.html: enlace retirado a papa.html"
+    ]
+  },
+  {
     "folder": "Barros y Cibils",
     "entry": "index.html",
     "included": [
@@ -23,18 +39,11 @@
     "folder": "Cano y Castiglioni",
     "entry": "index.html",
     "included": [
-      "index.html"
+      "index.html",
+      "papa.html"
     ],
-    "excluded": [
-      {
-        "file": "papa.html",
-        "reason": "Documento vacío, sin texto ni contenido desarrollado."
-      }
-    ],
-    "repairs": [
-      "index.html: enlace retirado a papa.html",
-      "index.html: enlace retirado a papa.html"
-    ]
+    "excluded": [],
+    "repairs": []
   },
   {
     "folder": "Ceriani y Sofia Mendez",
@@ -100,24 +109,20 @@
       "papa.html"
     ],
     "excluded": [],
-    "repairs": [
-      "index.html: conexión añadida a papa.html",
-      "papa.html: conexión añadida a index.html"
-    ]
+    "repairs": []
   },
   {
     "folder": "Laurito Benjamin Martinez y Pedro Abal",
-    "entry": "papa.html",
+    "entry": "derecho.html",
     "included": [
+      "derecho.html",
       "papa.html"
     ],
-    "excluded": [
-      {
-        "file": "derecho.html",
-        "reason": "Solo una frase introductoria y una cita; sin desarrollo del tema."
-      }
-    ],
-    "repairs": []
+    "excluded": [],
+    "repairs": [
+      "derecho.html: conexión añadida a papa.html",
+      "papa.html: conexión añadida a derecho.html"
+    ]
   },
   {
     "folder": "Macarena Lara y Giuliana Martinez",
@@ -153,6 +158,16 @@
   },
   {
     "folder": "Rojo y Armanetti",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Roman y Bautista Di Palma",
     "entry": "index.html",
     "included": [
       "index.html",
@@ -205,5 +220,25 @@
     "repairs": [
       "papa.html: enlace retirado a index.html"
     ]
+  },
+  {
+    "folder": "Suarez y Etcheverrito",
+    "entry": "Derechos.html",
+    "included": [
+      "Derechos.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
+  },
+  {
+    "folder": "Villar y Leguizamon",
+    "entry": "index.html",
+    "included": [
+      "index.html",
+      "papa.html"
+    ],
+    "excluded": [],
+    "repairs": []
   }
 ]

@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(1, 130, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(238, 195, 76);
+}
+
+
+p{
+    font-size: medium;
+}
+
+section{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(231, 189, 2);
+}
+
+img{
+    width: 200px;
+}

@@ -1,0 +1,33 @@
+body{
+      background-color: black;
+
+    }
+
+h1{
+color: white;
+
+}
+header{
+color: white;
+
+
+    }
+section{
+    color: white;
+    background-color:grey;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 12px;
+}
+img{
+    width: 300px;
+    border-radius: 7px;
+}
+footer{
+    background-color:grey;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 12px;
+}

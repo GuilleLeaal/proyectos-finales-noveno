@@ -1,6 +1,8 @@
- 
+
 
 body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
     background-color: aqua;
 }
 
@@ -8,26 +10,49 @@ body{
   .mi-seccion {
     background-color: #42a3e4;
     padding: 20px;
+     margin-top: 20px;
 }
 
 .mi2-seccion {
     background-color: rgb(26, 132, 173) ;
     padding: 20px;
+     margin-top: 20px;
 }
+
 
 .mi3-seccion {
     background-color: #194586;
     padding: 20px;
+     margin-top: 20px;
 }
+
 
 .mi4-seccion {
     background-color: #0d2549;
     padding: 20px;
+    margin-top: 20px;
 }
 
-.mi5-seccion{
+footer{
     background-color: #051731;
     padding: 20px;
+    margin-top: 20px;
 }
 
+.salud {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -300px;
+}
 
+.hospital{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -230px;
+}
+
+.hospitalPriv{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -370px;
+}

@@ -3,12 +3,19 @@
     color: white;
     border-radius: 15px;
     text-align: center;
-    
+
 }
 
 body{
     background-color: azure;
     margin-left: 10%;
     margin-right: 10%;
-    
+
+}
+
+
+.headerDerecho{
+
+ border-radius: 15px;
+
 }

@@ -8,6 +8,7 @@
 .student-project__viewer { width: 100%; max-width: 1760px; margin-inline: auto; }
 .student-project__header { display: grid; grid-template-columns: 1fr minmax(0, auto) 1fr; align-items: center; gap: 24px; min-height: 84px; padding-block: 16px; }
 .student-project__header h1 { margin: 0; font: 500 clamp(17px, 1.8vw, 27px)/1.2 "Space Grotesk", sans-serif; letter-spacing: -.04em; text-align: center; overflow-wrap: anywhere; }
+.student-project__actions { display: flex; align-items: center; justify-self: end; gap: 12px; }
 .student-project__back, .student-project__expand { display: inline-flex; align-items: center; gap: 9px; color: inherit; font: 500 12px "DM Sans", sans-serif; text-decoration: none; width: fit-content; min-height: 36px; }
 .student-project__expand { justify-self: end; padding: 6px 0 6px 10px; border: 0; background: transparent; cursor: pointer; }
 .student-project__back:hover, .student-project__expand:hover { color: #3449f7; }
@@ -21,7 +22,8 @@
 .student-project--missing h1 { font: 500 28px "Space Grotesk", sans-serif; margin-bottom: 20px; }
 @media (max-width: 600px) {
   .student-project { padding-bottom: 12px; }
-  .student-project__header { grid-template-columns: 34px minmax(0, 1fr) 34px; min-height: 72px; gap: 12px; }
+  .student-project__header { grid-template-columns: 34px minmax(0, 1fr) auto; min-height: 72px; gap: 8px; }
+  .student-project__actions { gap: 4px; }
   .student-project__back > span, .student-project__expand > span { display: none; }
   .student-project__expand { padding: 8px; }
   .student-project__iframe { height: calc(100svh - 84px); }

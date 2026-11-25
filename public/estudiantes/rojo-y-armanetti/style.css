@@ -67,7 +67,7 @@ img {
 
 html {
   scroll-behavior: smooth;
-  
+
   scroll-padding-top: 9rem;
 }
 
@@ -89,12 +89,12 @@ html {
 
 .cabecera{
   position: sticky;
-  top: 0;         
+  top: 0;
   left: 0;
-  width: 100%;    
-  background-color: #1b3a5c; 
+  width: 100%;
+  background-color: #1b3a5c;
   color: #ffffff;
-  z-index: 9999;  
+  z-index: 9999;
 }
 
 .cabecera__interior {
@@ -144,10 +144,10 @@ html {
 
 
 .indice {
-  flex-basis: 100%;                 
+  flex-basis: 100%;
   padding-top: 0.4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.25);
-  overflow-x: auto;                 
+  overflow-x: auto;
 }
 
 .indice__lista {
@@ -262,7 +262,7 @@ html {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
   gap: 1.5rem;
-  align-items: start;   
+  align-items: start;
   margin: 1.5rem 0 0 0;
 }
 

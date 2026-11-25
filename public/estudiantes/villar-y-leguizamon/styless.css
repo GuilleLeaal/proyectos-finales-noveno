@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(151, 223, 228);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+}
+
+section{
+    margin: 50px;
+    padding: 20px;
+    background-color: rgb(72, 94, 189);
+}
+
+
+.seccionLista{
+    background-color: brown;
+
+}
+
+.tituloJust{
+    text-align: left;
+}
+
+.titulo2{
+    text-align: right;
+}

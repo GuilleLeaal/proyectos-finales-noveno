@@ -1,0 +1,13 @@
+.QuienEsPapa{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.papa{
+    background-color: antiquewhite;
+    border-radius: 10px
+}
+
+body{
+    background-color: gainsboro;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

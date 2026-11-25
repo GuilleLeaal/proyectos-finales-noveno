@@ -1,4 +1,124 @@
 {
+  "Villar y Leguizamon": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "<title>derechoshumanos</title>",
+            "<title>Derechos humanos</title>"
+          ],
+          [
+            "DERECHO A DECIR \"SI\" O \"NO\"",
+            "DERECHO A DECIR \"SÍ\" O \"NO\""
+          ],
+          [
+            ">papa leon xv</a>",
+            ">Papa León XIV</a>"
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "<title>PAPALEON XV</title>",
+            "<title>Papa León XIV</title>"
+          ],
+          [
+            ">papa leon xv</a>",
+            ">Papa León XIV</a>"
+          ],
+          [
+            ">PAPALEONXIV<",
+            ">Papa León XIV<"
+          ],
+          [
+            "¿quien es el papa leonXIV?",
+            "¿Quién es el papa León XIV?"
+          ],
+          [
+            ">PAPA LEON XIV<",
+            ">Papa León XIV<"
+          ]
+        ]
+      }
+    }
+  },
+  "Suarez y Etcheverrito": {
+    "pages": {
+      "papa.html": {
+        "replacements": [
+          [
+            "¿Porque viene a Uruguay?",
+            "¿Por qué viene a Uruguay?"
+          ]
+        ]
+      }
+    }
+  },
+  "Roman y Bautista Di Palma": {
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            ">inico</a>",
+            ">Inicio</a>"
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            ">inico</a>",
+            ">Inicio</a>"
+          ],
+          [
+            "<title>Document</title>",
+            "<title>Papa León XIV</title>"
+          ]
+        ]
+      }
+    }
+  },
+  "Acuna y Camara": {
+    "exclude": {
+      "papa.html": "Documento vacío, sin texto ni contenido desarrollado."
+    },
+    "pages": {
+      "index.html": {
+        "replacements": [
+          [
+            "<img src=\"https://www.pfizer.uy/%C3%A1reas-terap%C3%A9uticas/vacunas\"alt=\"imagen sobre la prevencion\">",
+            "<a href=\"https://www.pfizer.uy/%C3%A1reas-terap%C3%A9uticas/vacunas\">Información sobre vacunas</a>"
+          ],
+          [
+            "<a href=\"papa.html\">inicio </a>",
+            "<a href=\"index.html\">Inicio</a>"
+          ],
+          [
+            "Hospitales publicos",
+            "Hospitales públicos"
+          ],
+          [
+            "origen del derecho a la Salud",
+            "Origen del derecho a la salud"
+          ],
+          [
+            "¿cómo se aplica el derecho a la salud y dificultades?",
+            "¿Cómo se aplica el derecho a la salud y qué dificultades enfrenta?"
+          ],
+          [
+            "<h2>conclusión</h2>",
+            "<h2>Conclusión</h2>"
+          ],
+          [
+            "la justicia y la seguridad\n",
+            "la justicia y la seguridad.\n"
+          ]
+        ]
+      }
+    }
+  },
+
   "Bonifacino y Di Palma": {
     "pages": {
       "papa.html": {
@@ -53,6 +173,32 @@
   "Laurito Benjamin Martinez y Pedro Abal": {
     "exclude": {
       "derecho.html": "Solo una frase introductoria y una cita; sin desarrollo del tema."
+    },
+    "pages": {
+      "derecho.html": {
+        "replacements": [
+          [
+            "href=\"styles.css\"",
+            "href=\"stayles derecho.css\""
+          ],
+          [
+            "   <link rel=\"stylesheet\" href=\"stayles derecho.css\">\n",
+            ""
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "href=\"styles.css\"",
+            "href=\"styles pbl.css\""
+          ],
+          [
+            "EL TOUR DEL PAPA EN SUDAMERICA",
+            "EL TOUR DEL PAPA EN SUDAMÉRICA"
+          ]
+        ]
+      }
     }
   },
   "Sofia Reina y Eva Paiva": {
@@ -126,6 +272,14 @@
           [
             "src=\"https://styluspub.presswarehouse.com/browse/book/9789243590288/El-Derecho-a-la-salud\"",
             "src=\"imagenes/images%20salud.jpg\""
+          ]
+        ]
+      },
+      "papa.html": {
+        "replacements": [
+          [
+            "alt=\"Papa León XVI\"",
+            "alt=\"Papa León XIV\""
           ]
         ]
       }

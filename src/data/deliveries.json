@@ -168,7 +168,7 @@
     "group": "9C",
     "artwork": 0,
     "published": true,
-    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/derecho.html"
   },
   {
     "id": "9c-benjamin-martinez",
@@ -177,7 +177,7 @@
     "group": "9C",
     "artwork": 6,
     "published": true,
-    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/derecho.html"
   },
   {
     "id": "9c-pedro-abal",
@@ -186,7 +186,7 @@
     "group": "9C",
     "artwork": 3,
     "published": true,
-    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/papa.html"
+    "projectPath": "/estudiantes/laurito-benjamin-martinez-y-pedro-abal/derecho.html"
   },
   {
     "id": "9a-macarena-lopez",
@@ -304,5 +304,77 @@
     "artwork": 3,
     "published": true,
     "projectPath": "/estudiantes/sofia-reina-y-eva-paiva/papa.html"
+  },
+  {
+    "id": "9a-leandro-acuna",
+    "firstName": "Leandro",
+    "lastName": "Acuña",
+    "group": "9A",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/acuna-y-camara/index.html"
+  },
+  {
+    "id": "9a-juan-camara",
+    "firstName": "Juan",
+    "lastName": "Cámara",
+    "group": "9A",
+    "artwork": 3,
+    "published": true,
+    "projectPath": "/estudiantes/acuna-y-camara/index.html"
+  },
+  {
+    "id": "9a-benjamin-roman",
+    "firstName": "Benjamín",
+    "lastName": "Roman",
+    "group": "9A",
+    "artwork": 4,
+    "published": true,
+    "projectPath": "/estudiantes/roman-y-bautista-di-palma/index.html"
+  },
+  {
+    "id": "9a-bautista-di-palma",
+    "firstName": "Bautista",
+    "lastName": "Di Palma",
+    "group": "9A",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/roman-y-bautista-di-palma/index.html"
+  },
+  {
+    "id": "9a-geronimo-suarez",
+    "firstName": "Gerónimo",
+    "lastName": "Suárez",
+    "group": "9A",
+    "artwork": 3,
+    "published": true,
+    "projectPath": "/estudiantes/suarez-y-etcheverrito/Derechos.html"
+  },
+  {
+    "id": "9a-renato-etcheverrito",
+    "firstName": "Renato",
+    "lastName": "Etcheverrito",
+    "group": "9A",
+    "artwork": 7,
+    "published": true,
+    "projectPath": "/estudiantes/suarez-y-etcheverrito/Derechos.html"
+  },
+  {
+    "id": "9a-ivan-villar",
+    "firstName": "Ivan",
+    "lastName": "Villar",
+    "group": "9A",
+    "artwork": 0,
+    "published": true,
+    "projectPath": "/estudiantes/villar-y-leguizamon/index.html"
+  },
+  {
+    "id": "9a-nicolas-leguizamon",
+    "firstName": "Nicolas",
+    "lastName": "Leguizamon",
+    "group": "9A",
+    "artwork": 4,
+    "published": true,
+    "projectPath": "/estudiantes/villar-y-leguizamon/index.html"
   }
 ]
